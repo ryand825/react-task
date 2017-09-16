@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Drawer from 'material-ui/Drawer';
-import MenuItem from 'material-ui/MenuItem';
+import {Menu, MenuItem} from 'material-ui/Menu';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import NavigationClose from 'material-ui/svg-icons/navigation/close';
+import Divider from 'material-ui/Divider';
 
 
 export default class LeftDrawer extends Component {
@@ -38,8 +39,10 @@ export default class LeftDrawer extends Component {
             title="Menu"
             onLeftIconButtonTouchTap={this.closeDrawer}
           />
-          <MenuItem>Menu Item</MenuItem>
-          <MenuItem>Menu Item 2</MenuItem>
+          <MenuItem>View Tasks</MenuItem>
+          <MenuItem>Create Task</MenuItem>
+          <Divider />
+          <MenuItem>Manage Customers</MenuItem>
         </Drawer>
       </div >
     );

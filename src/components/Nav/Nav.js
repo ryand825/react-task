@@ -2,13 +2,6 @@ import React, {Component} from 'react';
 import AppBar from 'material-ui/AppBar';
 import LeftDrawer from './LeftDrawer/LeftDrawer';
 
-
-function menuClick() {
-    // alert('alerted');
-}
-
-var open = true;
-
 export default class Nav extends Component {
 
     constructor(props) {
@@ -31,7 +24,7 @@ export default class Nav extends Component {
         return (
             <div>
                 <AppBar
-                    title="My React App"
+                    title="React Task App"
                     onLeftIconButtonTouchTap={this.changeState}
                 />
                 <LeftDrawer open={this.state.isOpen} />
