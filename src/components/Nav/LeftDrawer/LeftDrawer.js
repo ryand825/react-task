@@ -34,10 +34,6 @@ export default class LeftDrawer extends Component {
     this.setState({ open: false, redirect: newRoute })
   }
 
-  componentWillUpdate() {
-    if (this.state.redirect) {
-    }
-  }
 
   componentDidUpdate(prevProps, prevState) {
     if (prevState.redirect) {
